@@ -5,10 +5,9 @@ An opinionated Expo starter template with Expo Router, Reanimated, Gesture Handl
 ## Use this template
 
 ```bash
-npx create-expo-app@latest my-app --template github:enes-cetin/expo-starter
+npx create-expo-app@latest my-app --template github:enespctnn/expo-starter
 ```
 
-Replace `enes-cetin` with your GitHub username after you push this repo.
 
 ## Stack
 
