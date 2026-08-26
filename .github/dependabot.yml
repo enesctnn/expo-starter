@@ -1,0 +1,51 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Istanbul"
+
+    groups:
+      expo:
+        patterns:
+          - "expo"
+          - "expo-*"
+          - "@expo/*"
+
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "react-native"
+          - "@types/react"
+          - "@types/react-dom"
+
+      tooling:
+        dependency-type: "development"
+        patterns:
+          - "*"
+
+    ignore:
+      - dependency-name: "expo"
+        update-types:
+          - "version-update:semver-major"
+
+      - dependency-name: "react-native"
+        update-types:
+          - "version-update:semver-major"
+
+    open-pull-requests-limit: 10
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Istanbul"
