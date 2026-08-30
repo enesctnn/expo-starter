@@ -5,7 +5,8 @@ An opinionated Expo starter template with Expo Router, Reanimated, Gesture Handl
 ## Use this template
 
 ```bash
-npx create-expo-app@latest my-app --template @eness_ctnn/expo-starter --package-manager yarn
+npx create-expo-app@latest my-app --template @eness_ctnn/expo-starter
+cd my-app && yarn install
 ```
 
 ## Stack
